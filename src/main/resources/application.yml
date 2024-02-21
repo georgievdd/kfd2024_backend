@@ -9,7 +9,9 @@ spring:
   jpa:
     generate-ddl: true
 server:
-  port: 8080
+  port: 8000
+  servlet:
+    context-path: "/api/v1"
 jwt:
   key: "eargb;fbw34oiu5r[132t43-]0=cvfA_wREGFJjM4J]-JF4JT-]3FMOOO4TGOOPEWJGQ]A-GW40Ejfo-gp4tt3qpwsionefg[wpio4tn034[fa"
   access-token-expiration: 30000
