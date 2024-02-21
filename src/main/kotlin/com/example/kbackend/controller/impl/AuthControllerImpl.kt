@@ -3,10 +3,8 @@ package com.example.kbackend.controller.impl
 import com.example.kbackend.controller.AuthController
 import com.example.kbackend.dto.auth.AuthRequest
 import com.example.kbackend.dto.auth.AuthResponse
-import com.example.kbackend.dto.auth.CheckResponse
 import com.example.kbackend.dto.auth.TokenPair
 import com.example.kbackend.service.impl.AuthServiceImpl
-import jakarta.servlet.http.HttpServletResponse
 import org.springframework.http.HttpHeaders
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*

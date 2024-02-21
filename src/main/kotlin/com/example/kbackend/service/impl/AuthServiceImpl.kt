@@ -1,6 +1,5 @@
 package com.example.kbackend.service.impl
 
-import TokenService
 import com.example.kbackend.controller.AuthService
 import com.example.kbackend.database.dao.UserAuthDao
 import com.example.kbackend.database.dao.UserDao
@@ -8,14 +7,11 @@ import com.example.kbackend.database.entity.UserAuthEntity
 import com.example.kbackend.database.entity.UserEntity
 import com.example.kbackend.dto.auth.AuthRequest
 import com.example.kbackend.dto.auth.AuthResponse
-import com.example.kbackend.dto.auth.CheckResponse
 import com.example.kbackend.dto.auth.TokenPair
 import com.example.kbackend.dto.exception.UnauthorizeException
 import com.example.kbackend.model.UserPrincipal
 import com.example.kbackend.model.exception.AlreadyExistException
 import com.example.kbackend.model.exception.NotFoundException
-import org.springframework.security.authentication.AuthenticationManager
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
 

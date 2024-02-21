@@ -1,19 +1,13 @@
 package com.example.kbackend.config
 
 import com.example.kbackend.controller.ExceptionResolver
-import com.example.kbackend.dto.exception.UnauthorizeException
 import com.example.kbackend.model.exception.ApiException
 import com.example.kbackend.service.impl.TokenServiceImpl
-import com.example.kbackend.service.impl.UserDetailsServiceImpl
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.http.HttpStatus
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder
-import org.springframework.security.core.userdetails.UserDetails
-import org.springframework.security.core.userdetails.UserDetailsService
-import org.springframework.security.web.authentication.WebAuthenticationDetailsSource
 import org.springframework.stereotype.Component
 import org.springframework.web.filter.OncePerRequestFilter
 
